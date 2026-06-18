@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semillero Científico - Incubadora de Ciencia y Tecnología</title>
+    <meta name="description" content="Plataforma interactiva del Semillero Científico. Explorando el futuro de la ciencia y la tecnología a través de la investigación y la innovación.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background glow elements -->
+    <div class="glow-bg">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fa-solid fa-atom logo-icon"></i>
+            <span>PROGRAMA NACIONAL <span class="accent-text">SEMILLEROS CIENTÍFICOS</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema">
+                <i class="fa-solid fa-sun icon-sun"></i>
+                <i class="fa-solid fa-moon icon-moon"></i>
+            </button>
+            <a href="#registro" class="btn btn-primary">Unirse</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <span class="badge badge-solid"><i class="fa-solid fa-flask"></i> PROYECTO DE INNOVACIÓN 2026</span>
+                <h1>Explorando el Futuro<br><span class="gradient-text">de la Tecnología</span></h1>
+                <p>Formamos mentes curiosas a través de la robótica, la ciencia y el pensamiento creativo. Un espacio diseñado para aprender, experimentar y liderar el mañana.</p>
+                <div class="hero-buttons">
+                    <a href="#noticias" class="btn btn-primary">Ver Noticias</a>
+                    <a href="#historia" class="btn btn-secondary">Saber Más</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="science-orb">
+                    <div class="orb-ring ring-1"></div>
+                    <div class="orb-ring ring-2"></div>
+                    <div class="orb-ring ring-3"></div>
+                    
+                    <!-- Nodos flotantes e iconos -->
+                    <div class="micro-icon-container node-microscope">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <div class="micro-icon-container node-list-top">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="micro-icon-container node-network">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <div class="micro-icon-container node-chart">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="micro-icon-container node-list-small">
+                        <i class="fa-solid fa-align-left"></i>
+                    </div>
+                    <div class="micro-icon-container node-sphere"></div>
+                    
+                    <!-- Imagen Central del Robot Humanoide -->
+                    <img src="images/Robot_Semillero.png" alt="Robot Programa Nacional Semilleros Científicos" class="robot-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="historia" class="history-section">
+            <div class="section-header">
+                <span class="badge"><i class="fa-solid fa-clock-rotate-left"></i> Trayectoria</span>
+                <h2 class="section-title">Nuestra <span class="gradient-text">Historia</span></h2>
+            </div>
+            <div class="history-intro">
+                <p>El Programa Nacional Semilleros Científicos, que desarrolla el Ministerio del Poder Popular para Ciencia y Tecnología desde 2019, fomenta el interés de los jóvenes por la ciencia y la investigación.</p>
+                <p>Hasta la fecha, más de 1.200.000 de niños, niñas y jóvenes participan en el programa en coordinación con instituciones educativas, centros de investigación y entes del Mincyt, lo que enriquece la experiencia de los participantes y fortalece su formación en el campo científico.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-dot"><i class="fa-solid fa-seedling"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <h3>Fundación</h3>
+                        <p>Nace el semillero con el claro objetivo de fomentar la curiosidad científica e innovación en los jóvenes.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"><i class="fa-solid fa-robot"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <h3>Primeros Pasos</h3>
+                        <p>Implementación de los primeros entornos de robótica avanzada y desarrollo de proyectos piloto.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot"><i class="fa-solid fa-award"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3>Crecimiento</h3>
+                        <p>Participación destacada en ferias tecnológicas nacionales y obtención de primeros reconocimientos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2026</span>
+                        <h3>El Futuro</h3>
+                        <p>Expansión mediante alianzas estratégicas y nuevos laboratorios enfocados en tecnología de punta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="noticias" class="news-section">
+            <div class="section-header">
+                <span class="badge"><i class="fa-solid fa-newspaper"></i> Actualidad</span>
+                <h2 class="section-title">Noticias <span class="gradient-text">Recientes</span></h2>
+            </div>
+            <div class="news-grid" id="news-container">
+                <!-- JavaScript will render news cards here -->
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="nosotros" class="about-section">
+            <div class="section-header">
+                <span class="badge"><i class="fa-solid fa-users"></i> Equipo</span>
+                <h2 class="section-title">¿Quiénes <span class="gradient-text">Somos?</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon-wrapper">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3>¿Quiénes Somos?</h3>
+                    <p>Somos un espacio de encuentro, aprendizaje y creación colectiva que impulsa la inventiva nacional desde las bases tecnológicas. Creemos en el talento de nuestra juventud como el motor de la transformación científica.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon-wrapper">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3>Nuestra Misión</h3>
+                    <p>Despertar la curiosidad científica, promover el pensamiento lógico y capacitar a las nuevas generaciones en áreas estratégicas como la robótica avanzada, la programación y las ciencias aplicadas para liderar el desarrollo del mañana.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon-wrapper">
+                        <i class="fa-solid fa-hand-holding-hand"></i>
+                    </div>
+                    <h3>¿A quién va dirigido?</h3>
+                    <p>A niños, niñas, jóvenes, estudiantes, docentes y representantes apasionados por la innovación que deseen transformar sus ideas en proyectos reales con impacto social.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Modal -->
+        <div id="registro-modal" class="modal-overlay">
+            <div class="register-card">
+                <button id="close-modal" class="btn-close-modal" aria-label="Cerrar modal"><i class="fa-solid fa-xmark"></i></button>
+                <div class="register-header">
+                    <span class="badge"><i class="fa-solid fa-user-plus"></i> Inscripciones</span>
+                    <h2>Únete al <span class="gradient-text">Semillero</span></h2>
+                    <p>Completa el formulario para postularte y formar parte de nuestros laboratorios de investigación.</p>
+                </div>
+                <form id="registration-form" class="register-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user input-icon"></i>
+                                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej. José" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-user input-icon"></i>
+                                <input type="text" id="apellido" name="apellido" class="form-input" placeholder="Ej. González" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cedula" class="form-label">Cédula de Identidad</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-id-card input-icon"></i>
+                                <input type="text" id="cedula" name="cedula" class="form-input" placeholder="Ej. V-30123456" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="edad" class="form-label">Edad</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-calendar-days input-icon"></i>
+                                <input type="number" id="edad" name="edad" class="form-input" placeholder="Ej. 18" required min="10" max="100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone input-icon"></i>
+                                <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Ej. 04121234567" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope input-icon"></i>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="nombre@correo.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo_miembro" class="form-label">Tipo de Miembro</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-users input-icon"></i>
+                            <select id="tipo_miembro" name="tipo_miembro" class="form-select" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="Estudiante / Aspirante" class="select-option">Estudiante / Aspirante</option>
+                                <option value="Profesor / Mentor" class="select-option">Profesor / Mentor</option>
+                                <option value="Representante" class="select-option">Representante</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Registrar Aspirante</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-pillars">
+            <span class="pillar-badge"><i class="fa-solid fa-lightbulb"></i> INNOVACIÓN</span>
+            <span class="pillar-badge"><i class="fa-solid fa-microchip"></i> TECNOLOGÍA</span>
+            <span class="pillar-badge"><i class="fa-solid fa-flask-vial"></i> CIENCIA</span>
+            <span class="pillar-badge"><i class="fa-solid fa-palette"></i> CREATIVIDAD</span>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2026 Semillero Científico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
