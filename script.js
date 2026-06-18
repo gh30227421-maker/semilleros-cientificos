@@ -173,4 +173,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         newsContainer.innerHTML = newsHTML;
     }
+
+    // ==========================================================================
+    // MOBILE MENU
+    // ==========================================================================
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navLinksContainer = document.getElementById('nav-links');
+
+    if (mobileMenuBtn && navLinksContainer) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinksContainer.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        const navItems = navLinksContainer.querySelectorAll('a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if(icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    }
 });
